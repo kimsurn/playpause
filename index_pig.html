@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <script src="https://use.typekit.net/dcf1ame.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+    <title>welcome to 성인병돼지퐈튀</title>
+    <style type="text/css"> 
+
+    *h1{font-family: "source-han-serif-korean",serif;}
+    h1{text-align:center; font-size: 10em;  line-height:1.7; font-weight: 900;}
+
+    body{perspective: 500px; perspective-origin:center; background: black; width: 100%;}
+        /*#myDiv {
+            box-sizing: border-box;
+            width: 400px;
+            height: 100px;
+            background: blue;
+            margin: auto;
+            position: relative; top: 150px;
+            text-align: center;
+            padding-top: 50px;
+            animation:mymove 3s linear alternate infinite;
+            transition: all 1s;
+            color: black;
+            }*/
+
+            *{margin: 0; padding: 0px; font-family: 'Luckiest Guy', cursive;}
+        h1{font-size: 4em; color: darkgray;}
+
+        #pig {width:200px; height: 400px; margin: auto; margin-top: 100px; float: left; 
+            animation: mymove 2.5s  infinite; 
+            animation-play-state: running;
+            animation-timing-function: cubic-bezier(.27,1.01,.46,.84); margin-bottom: -100px;}
+        #pig img{width:80px; height: 160px;}
+
+        #back{margin:0 auto; width: 100%; height: 100%;}
+
+        #fooddiv {margin: auto; background: white; width: 640px; border-radius: 35px; padding: 0px 10px 0px 300px; background:black; transition:all 1s position:relative; float: right; margin-right: 50px; margin-top: -400px; }
+
+        #food {margin: auto; width:200px; border-radius: 30px; opacity: 1; transition: all 1s}
+        #food2 {margin: auto; width:200px; border-radius: 30px; opacity: 1; transition: all 1s}
+        #food3 {margin: auto; width:200px; border-radius: 30px; opacity: 1; transition: all 1s}
+        #food4 {margin: auto; width:200px; border-radius: 30px; opacity: 1; transition: all 1s }
+        #food5 {margin: auto; width:200px; border-radius: 30px; opacity: 1; transition: all 1s}
+        #food6 {margin: auto; width:200px; border-radius: 30px;  opacity: 1; transition: all 1s}
+
+        #gifbox {position: absolute; left: 300px; top: 150px; transition: all 1s;}
+
+        #gsource{position: absolute; transition: all 1s;}
+        #gsource2{position: absolute; transition: all 1s;}
+        #gsource3{position: absolute; transition: all 1s;}
+        #gsource4{position: absolute; transition: all 1s;}
+        #gsource5{position: absolute; transition: all 1s;}
+        #gsource6{position: absolute; transition: all 1s;}
+                /*video{width: 0px; transition: all 1s;}
+        
+        #vsource{position: absolute; left: 50%; top: 50px; transform: translateX(-50%); width: 0px; transition: all 1s;}*/
+
+
+         #myDiv:hover {color: white; font-weight: 900; background: black;}
+
+         @keyframes mymove {
+            from {}
+            to {transform: rotate3d(0.1,18,2,360deg);}
+            }
+        </style>
+</head>
+
+<body>
+
+     <div id="pig" style="margin-top: 80px;"><img src="./img/seong.png"></div>
+    <div id="pig" style="margin-top: 80px;"><img src="./img/in.png"></div>
+    <div id="pig" style="margin-top: 80px;"><img src="./img/byeong.png"></div>
+    
+    <div id="back">
+    
+    <div id="gifbox" style="width: 0px; margin-top: -5em; margin-left: 150px;">
+        <img src="./img/cheese.gif" id="gsource" style="width: 0px; height: 0px; transition: all 2s">
+    </div>
+
+    <div id="gifbox" style="width: 0px; margin-top: -5em; margin-left: 122px;">
+        <img src="./img/tofu.gif" id="gsource2" style="width: 0px; height: 0px; transition: all 2s">
+    </div>
+
+    <div id="gifbox" style="width: 0px; margin-top: -5em; margin-left: 122px;">
+        <img src="./img/sugar.gif" id="gsource3" style="width: 0px; height: 0px; transition: all 2s">
+    </div>
+
+    <div id="gifbox" style="width: 0px; margin-top: -5em; margin-left: 122px;">
+        <img src="./img/doughnut.gif" id="gsource4" style="width: 0px; height: 0px; transition: all 2s">
+    </div>
+
+    <div id="gifbox" style="width: 0px; margin-top: -5em; margin-left: 122px;">
+        <img src="./img/nacho.gif" id="gsource5" style="width: 0px; height: 0px; transition: all 2s">
+    </div>
+
+    <div id="gifbox" style="width: 0px; margin-top: -5em; margin-left: 122px;">
+        <img src="./img/steak.gif" id="gsource6" style="width: 0px; height: 0px; transition: all 2s">
+    </div>
+
+
+    <div id="fooddiv">
+        <img src="./img/food.png" id="food">
+        <img src="./img/food2.png" id="food2">
+        <img src="./img/food3.png" id="food3">
+        <img src="./img/food4.png" id="food4">
+        <img src="./img/food5.png" id="food5">
+        <img src="./img/food6.png" id="food6">
+    </div>
+    
+
+    <script>
+
+        /*food.onclick = function(){
+            gifbox.style.width = "820px";
+            gifbox.style.height = "550px";
+            gbox.style.background = "black";
+
+            gsource.style.width = "720px";
+            gsource.setAttribute("src","dheese.mp4");
+            gsource.play();
+        }
+
+        food2.onclick = function(){
+            gifbox.style.width = "820px";
+            gifbox.style.height = "550px";
+
+            gsource.style.width = "720px";
+            gsource.setAttribute("src","laugh.mp4");
+            gsource.play();
+        }*/
+
+
+        var toggle = "off";
+
+        food.onclick = function(){
+            if(toggle == "off"){
+                
+                gsource.style.width = "600px";
+                gsource.style.height = "650px";
+                gsource.setAttribute("src","./img/cheese.gif")
+                gsource.style.animationPayState ="running";
+
+                toggle = "on";
+
+                food2.style.opacity = 0.3;
+                food3.style.opacity = 0.3;
+                food4.style.opacity = 0.3;
+                food5.style.opacity = 0.3;
+                food6.style.opacity = 0.3;
+            }
+            else if (toggle = "on") {
+                toggle ="off";
+                gsource.style.width = "0px";
+                gsource.style.height = "0px";
+
+
+                food2.style.opacity = 1;
+                food3.style.opacity = 1;
+                food4.style.opacity = 1;
+                food5.style.opacity = 1;
+                food6.style.opacity = 1;
+            } 
+        }
+
+        var toggle = "off";
+
+        food2.onclick = function(){
+            if(toggle == "off"){
+                
+                gsource2.style.width = "600px";
+                gsource2.style.height = "650px";
+                gsource2.style.animationPayState ="running";
+
+                toggle = "on";
+
+                food1.style.opacity = 0.1;
+                food3.style.opacity = 0.1;
+                food4.style.opacity = 0.1;
+                food5.style.opacity = 0.1;
+                food6.style.opacity = 0.1;
+            }
+            else if (toggle = "on") {
+                toggle ="off";
+                gsource2.style.width = "0px";
+                gsource2.style.height = "0px";
+
+
+                food1.style.opacity = 1;
+                food3.style.opacity = 1;
+                food4.style.opacity = 1;
+                food5.style.opacity = 1;
+                food6.style.opacity = 1;
+            } 
+        }
+
+        var toggle = "off";
+
+        food3.onclick = function(){
+            if(toggle == "off"){
+                
+                gsource3.style.width = "600px";
+                gsource3.style.height = "650px";
+                gsource3.style.animationPayState ="running";
+
+                toggle = "on";
+
+                food1.style.opacity = 0.1;
+                food2.style.opacity = 0.1;
+                food4.style.opacity = 0.1;
+                food5.style.opacity = 0.1;
+                food6.style.opacity = 0.1;
+            }
+            else if (toggle = "on") {
+                toggle ="off";
+                gsource3.style.width = "0px";
+                gsource3.style.height = "0px";
+
+
+                food1.style.opacity = 1;
+                food2.style.opacity = 1;
+                food4.style.opacity = 1;
+                food5.style.opacity = 1;
+                food6.style.opacity = 1;
+            } 
+        }
+
+        var toggle = "off";
+
+        food4.onclick = function(){
+            if(toggle == "off"){
+                
+                gsource4.style.width = "600px";
+                gsource4.style.height = "650px";
+                gsource4.style.animationPayState ="running";
+
+                toggle = "on";
+
+                food1.style.opacity = 0.1;
+                food2.style.opacity = 0.1;
+                food3.style.opacity = 0.1;
+                food5.style.opacity = 0.1;
+                food6.style.opacity = 0.1;
+            }
+            else if (toggle = "on") {
+                toggle ="off";
+                gsource4.style.width = "0px";
+                gsource4.style.height = "0px";
+
+
+                food1.style.opacity = 1;
+                food2.style.opacity = 1;
+                food3.style.opacity = 1;
+                food5.style.opacity = 1;
+                food6.style.opacity = 1;
+            } 
+        }
+
+        var toggle = "off";
+
+        food5.onclick = function(){
+            if(toggle == "off"){
+                
+                gsource5.style.width = "600px";
+                gsource5.style.height = "650px";
+                gsource5.style.animationPayState ="running";
+
+                toggle = "on";
+
+                food1.style.opacity = 0.1;
+                food2.style.opacity = 0.1;
+                food3.style.opacity = 0.1;
+                food4.style.opacity = 0.1;
+                food6.style.opacity = 0.1;
+            }
+            else if (toggle = "on") {
+                toggle ="off";
+                gsource5.style.width = "0px";
+                gsource5.style.height = "0px";
+
+
+                food1.style.opacity = 1;
+                food2.style.opacity = 1;
+                food3.style.opacity = 1;
+                food4.style.opacity = 1;
+                food6.style.opacity = 1;
+            } 
+        }
+
+        var toggle = "off";
+
+        food6.onclick = function(){
+            if(toggle == "off"){
+                
+                gsource6.style.width = "600px";
+                gsource6.style.height = "650px";
+                gsource6.style.animationPayState ="running";
+
+                toggle = "on";
+
+                food1.style.opacity = 0.1;
+                food2.style.opacity = 0.1;
+                food3.style.opacity = 0.1;
+                food4.style.opacity = 0.1;
+                food5.style.opacity = 0.1;
+            }
+            else if (toggle = "on") {
+                toggle ="off";
+                gsource6.style.width = "0px";
+                gsource6.style.height = "0px";
+
+
+                food1.style.opacity = 1;
+                food2.style.opacity = 1;
+                food3.style.opacity = 1;
+                food4.style.opacity = 1;
+                food5.style.opacity = 1;
+            } 
+        }
+    </script>
+
+    
+    <div id="pig"><img src="./img/pig.png"></div>
+    <div id="pig"><img src="./img/gi.png"></div>
+    <div id="pig"><img src="./img/par.png"></div>
+    <div id="pig"><img src="./img/ty.png"></div>
+
+    
+    
+</div>
+</div>
+
+</body>
+</html>
