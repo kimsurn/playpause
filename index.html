@@ -28,6 +28,8 @@
             color: black;
             }*/
 
+        #blank{width: 800px; position: absolute; left: 720px; top: 87px;}
+        #blank img {width: 550px; height: 545px; position: absolute;}
 
         #pig {width:160px; height: 200px; margin: auto; margin-top: 80px; float: left; 
             animation: mymove 2.5s  infinite; 
@@ -39,12 +41,12 @@
 
         #fooddiv {margin: auto; background: white; width: 200px; border-radius: 35px; background:black; transition:all 1s position:relative; float: right; margin-top: 80px;}
 
-        #food {margin: auto; width:200px; border-radius: 30px; opacity: 1; left:transition: all 0.5s }
-        #food2 {margin: auto; width:200px; border-radius: 30px; opacity: 1; transition: all 0.5s}
+        #food {margin: auto; width:200px; border-radius: 30px; margin-left: -7px; opacity: 1;  transition: all 0.5s }
+        #food2 {margin: auto; margin-left: -7px; width:200px; border-radius: 30px; opacity: 1; transition: all 0.5s}
         #food3 {margin: auto; width:200px; border-radius: 30px; opacity: 1; margin-top:-50px; transition: all 0.5s}
         #food4 {margin: auto; width:200px; border-radius: 30px; opacity: 1; margin-top: 20px;transition: all 0.5s }
         #food5 {margin: auto; width:200px; border-radius: 30px; margin-top: -20px; opacity: 1; transition: all 0.5s}
-        #food6 {margin: auto; width:200px; border-radius: 30px;  opacity: 1; margin-top: -30px; transition: all 0.5s}
+        #food6 {margin: auto; width:200px; border-radius: 30px;  opacity: 1; margin-top: -40px; transition: all 0.5s}
 
         #gifbox {position: absolute; left: 480px; top: 15px; transition: all 1s;}
 
@@ -69,33 +71,33 @@
 </head>
 
 <body>
+    <div id="blank"><img src="./img/blank.png"></div>
     
     <div id="back">
     
-    <div id="gifbox" style="width: 0px; margin-top: -5em; margin-left: 150px;">
+    <div id="gifbox" style="width: 0px; margin-top: 5px; margin-left: 190px;">
         <img src="./img/cheese.gif" id="gsource" style="width: 0px; height: 0px; transition: all 1s">
     </div>
 
-    <div id="gifbox" style="width: 0px; margin-top: -5em; margin-left: 122px;">
+    <div id="gifbox" style="width: 0px; margin-top: -5em; margin-left: 190px;">
         <img src="./img/tofu.gif" id="gsource2" style="width: 0px; height: 0px; transition: all 1s">
     </div>
 
-    <div id="gifbox" style="width: 0px; margin-top: -5em; margin-left: 122px;">
+    <div id="gifbox" style="width: 0px; margin-top: -2em; margin-left: 160px;">
         <img src="./img/sugar.gif" id="gsource3" style="width: 0px; height: 0px; transition: all 1s">
     </div>
 
-    <div id="gifbox" style="width: 0px; margin-top: -5em; margin-left: 122px;">
+    <div id="gifbox" style="width: 0px; margin-top:6em; margin-left: 175px;">
         <img src="./img/doughnut.gif" id="gsource4" style="width: 0px; height: 0px; transition: all 1s">
     </div>
 
-    <div id="gifbox" style="width: 0px; margin-top: -5em; margin-left: 122px;">
+    <div id="gifbox" style="width: 0px; margin-top: 1em; margin-left: 210px;">
         <img src="./img/nacho.gif" id="gsource5" style="width: 0px; height: 0px; transition: all 1s">
     </div>
 
-    <div id="gifbox" style="width: 0px; margin-top: -5em; margin-left: 122px;">
+    <div id="gifbox" style="width: 0px; margin-top: 0em; margin-left: 175px;">
         <img src="./img/steak.gif" id="gsource6" style="width: 0px; height: 0px; transition: all 1s">
     </div>
-
 
     <div id="fooddiv">
         <img src="./img/food.png" id="food">
@@ -134,8 +136,8 @@
         food.onclick = function(){
             if(toggle == "off"){
                 
-                gsource.style.width = "680px";
-                gsource.style.height = "790px";
+                gsource.style.width = "630px";
+                gsource.style.height = "680px";
                 gsource.setAttribute("src","./img/cheese.gif")
                 gsource.style.animationPayState ="running";
 
@@ -171,7 +173,7 @@
 
                 toggle = "on";
 
-                food2.style.opacity = 0.3;
+                food1.style.opacity = 0.3;
                 food3.style.opacity = 0.3;
                 food4.style.opacity = 0.3;
                 food5.style.opacity = 0.3;
@@ -182,7 +184,7 @@
                 gsource2.style.width = "0px";
                 gsource2.style.height = "0px";
 
-                food2.style.opacity = 1;
+                food1.style.opacity = 1;
                 food3.style.opacity = 1;
                 food4.style.opacity = 1;
                 food5.style.opacity = 1;
@@ -195,8 +197,8 @@
         food3.onclick = function(){
             if(toggle == "off"){
                 
-                gsource3.style.width = "600px";
-                gsource3.style.height = "650px";
+                gsource3.style.width = "680px";
+                gsource3.style.height = "740px";
                 gsource3.style.animationPayState ="running";
 
                 toggle = "on";
@@ -226,8 +228,8 @@
         food4.onclick = function(){
             if(toggle == "off"){
                 
-                gsource4.style.width = "600px";
-                gsource4.style.height = "650px";
+                gsource4.style.width = "660px";
+                gsource4.style.height = "500px";
                 gsource4.style.animationPayState ="running";
 
                 toggle = "on";
@@ -288,8 +290,8 @@
         food6.onclick = function(){
             if(toggle == "off"){
                 
-                gsource6.style.width = "600px";
-                gsource6.style.height = "650px";
+                gsource6.style.width = "665px";
+                gsource6.style.height = "700px";
                 gsource6.style.animationPayState ="running";
 
                 toggle = "on";
@@ -322,6 +324,8 @@
     <div id="pig"><img src="./img/gi.png"></div>
     <div id="pig"><img src="./img/par.png"></div>
     <div id="pig"><img src="./img/ty.png"></div>
+
+    
 
     
     
