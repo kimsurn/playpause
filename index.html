@@ -79,8 +79,8 @@
         <img src="./img/cheese.gif" id="gsource" style="width: 0px; height: 0px; transition: all 1s">
     </div>
 
-    <div id="gifbox" style="width: 0px; margin-top: -5em; margin-left: 190px;">
-        <img src="./img/tofu.gif" id="gsource2" style="width: 0px; height: 0px; transition: all 1s">
+    <div id="gifbox" style="width: 0px; margin-top: 50px; margin-left: 200px;">
+        <img src="tofu.gif" id="gsource2" style="width: 0px; height: 0px; transition: all 1s">
     </div>
 
     <div id="gifbox" style="width: 0px; margin-top: -2em; margin-left: 160px;">
@@ -138,7 +138,6 @@
                 
                 gsource.style.width = "630px";
                 gsource.style.height = "680px";
-                gsource.setAttribute("src","./img/cheese.gif")
                 gsource.style.animationPayState ="running";
 
                 toggle = "on";
@@ -167,8 +166,8 @@
         food2.onclick = function(){
             if(toggle == "off"){
                 
-                gsource2.style.width = "600px";
-                gsource2.style.height = "650px";
+                gsource2.style.width = "630px";
+                gsource2.style.height = "680px";
                 gsource2.style.animationPayState ="running";
 
                 toggle = "on";
@@ -210,6 +209,7 @@
                 food6.style.opacity = 0.1;
             }
             else if (toggle = "on") {
+
                 toggle ="off";
                 gsource3.style.width = "0px";
                 gsource3.style.height = "0px";
@@ -316,7 +316,7 @@
             } 
         }
     </script>
-    <div id="pig" style="margin-top: 80px;"><img src="./img/seong.png"></div>
+    <div id="pig" style="margin-top: 80px; margin-left: 160px;"><img src="./img/seong.png"></div>
     <div id="pig" style="margin-top: 80px;"><img src="./img/in.png"></div>
     <div id="pig" style="margin-top: 80px;"><img src="./img/byeong.png"></div>
     <div style="width: 500px; height: 300px;">dd</div>
